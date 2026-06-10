@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<style>
+  .dropdown{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+
+    background:#fff;
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    min-width:180px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.submenu li a{
+    display:block;
+    padding:12px;
+    color:black;
+    text-decoration:none;
+}
+
+.submenu li a:hover{
+    background:#f2f2f2;
+}
+
+/* mostrar submenu */
+.dropdown:hover .submenu{
+    display:block;
+}
+</style>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Universidad Tecnológica de la Selva <br> Unidad Rayón</h1>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+            <li><a href="#">Acceso</a></li>
+            <li class="dropdown">
+             <a href="#">Acceso</a>
+            <ul class="submenu">
+             <li><a href="login.php">Iniciar sesión</a></li>
+            <li><a href="#">Página</a></li>
+           </ul>
+            </li>
+<li><a href="respaldo_bd.php">Respaldo BD</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- SLIDER AUTOMÁTICO -->
+    <div class="slider">
+
+        <div class="slides">
+            <div class="slide">
+                <img src="img/uts.jpg" style="width:550px; height:350px;">
+            </div>
+            <div class="slide">
+                <img src="img/maestria.jpeg" style="width:550px; height:350px;">
+            </div>
+            <div class="slide">
+                <img src="img/utselva.jpg" style="width:650px; height:350px;">
+            </div>
+            <div class="slide">
+                <img src="img/uts.jpg" style="width:550px; height:350px;">
+            </div>
+            <div class="slide">
+                <img src="img/maestria.jpeg" style="width:550px; height:350px;">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <main>
+        <h2>Bienvenidos</h2>
+
+        <p>
+            Esta página web contiene un slider automático de imágenes
+            usando HTML y CSS.
+        </p>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+    <p>© 2026 Realizado por Ing. Román Ramírez Ruiz</p>
+
+    <p>
+        📞 Tel: 919 133 6529
+    </p>
+
+    <p>
+        🌐 Facebook:  |
+        📷 Instagram: @roman_ramirez |
+        💬 WhatsApp: 9191336520
+    </p>
+</footer>
+
+</body>
+</html>
